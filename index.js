@@ -3,9 +3,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
-
 import {
   View,
+  ViewPropTypes as RNViewPropTypes,
   TouchableHighlight,
   Text,
   StyleSheet,
@@ -309,19 +309,19 @@ SettingsList.Item = createReactClass({
     /**
      * Item Box Style
      */
-    itemBoxStyle : View.propTypes.style,
+    itemBoxStyle : RNViewPropTypes.style,
     /**
      * Title Box Style
      */
-    titleBoxStyle: View.propTypes.style,
+    titleBoxStyle: RNViewPropTypes.style,
     /**
      * Right Side Style
      */
-    rightSideStyle: View.propTypes.style,
+    rightSideStyle: RNViewPropTypes.style,
     /**
      * Editable Right Side Style
      */
-    editableTextStyle: View.propTypes.style,
+    editableTextStyle: RNViewPropTypes.style,
 
     /**
      * Individual item width.  Can be globally set in the parent.  Will become deprecated
